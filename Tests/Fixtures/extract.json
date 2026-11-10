@@ -1,0 +1,9 @@
+{
+  "url": "https://shop.example.org/products/1",
+  "statusCode": 200,
+  "httpResponseBody": "PCFkb2N0eXBlIGh0bWw+PGh0bWw+PGhlYWQ+PHRpdGxlPlByb2R1Y3QgMTwvdGl0bGU+PG1ldGEgbmFtZT0idGRtLXJlc2VydmF0aW9uIiBjb250ZW50PSIxIj48L2hlYWQ+PGJvZHk+PC9ib2R5PjwvaHRtbD4=",
+  "httpResponseHeaders": [
+    {"name": "content-type", "value": "text/html; charset=utf-8"},
+    {"name": "x-robots-tag", "value": "noarchive"}
+  ]
+}

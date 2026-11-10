@@ -1,0 +1,33 @@
+{
+    "$schema": "https://github.com/glitchr-omnisense/contracts/blob/1.x/resources/usage-policy.schema.json",
+    "provider": "zyte",
+    "rateLimits": [
+        {
+            "max": 3000,
+            "window": "minute",
+            "note": "3,000 requests a minute per API key on the standard plans; Zyte also applies per-site and per-account-site limits it does not publish (429 /limits/over-domain-limit, /limits/over-org-domain-limit)."
+        }
+    ],
+    "concurrency": null,
+    "rights": {
+        "commercial": "allowed",
+        "openSourceRequired": false,
+        "caching": {"permission": "unknown", "maxTtl": null},
+        "storage": "unknown",
+        "redistribution": "unknown",
+        "attribution": {"required": false, "text": null, "url": null, "where": []},
+        "licence": null
+    },
+    "requirements": {
+        "key": true,
+        "userAgent": {"required": false, "pattern": null}
+    },
+    "provenance": {
+        "terms": "https://www.zyte.com/terms-policies/terms-of-service/",
+        "policy": "https://www.zyte.com/terms-policies/acceptable-use-policy/",
+        "verifiedAt": "2026-11-10",
+        "declaredBy": "maintainer",
+        "contact": "https://www.zyte.com",
+        "notes": "Terms of 2026-09-22. §3.4: it is up to the customer to determine the legality of the way it uses the services; use for internal business purposes; Zyte may suspend a customer who breached the terms of a targeted data source. The acceptable use policy bans illegal collection, personal data in breach of data-protection law, sites whose terms the customer agreed to and that forbid it, LinkedIn, use that materially interferes with a website's normal operations, and AI uses prohibited or high-risk under the EU AI Act. No robots.txt clause. Rate: https://docs.zyte.com/zyte-api/usage/rate-limit.html; 429s are free and to be retried with exponential backoff (about 20-40 s at first); 520 is a temporary ban, 521 a permanent one (https://docs.zyte.com/zyte-api/usage/errors.html). Ban avoidance (CAPTCHA handling, residential IPs) is on by default and cannot be turned off per request: omnicrawl uses Zyte for targets declared as one's own site or with written permission only."
+    }
+}
