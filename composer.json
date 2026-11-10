@@ -1,0 +1,34 @@
+{
+    "name": "omnicrawl/zyte",
+    "type": "library",
+    "description": "Reserved, not released yet: Zyte API for omnisense/omnicrawl.",
+    "keywords": [
+        "omnicrawl",
+        "zyte",
+        "reserved"
+    ],
+    "homepage": "https://github.com/glitchr-omnisense/omnicrawl-zyte",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Meyer",
+            "email": "marco.meyer@glitchr.io"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnicrawl\\ZyteAPI\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-1.x": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
